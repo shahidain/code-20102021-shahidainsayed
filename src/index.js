@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import BmiApp from './BmiApp'
+import {Header, Footer} from './banners'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    <BmiApp />
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
