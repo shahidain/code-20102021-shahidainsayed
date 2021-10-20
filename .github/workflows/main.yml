@@ -45,8 +45,8 @@ jobs:
     needs: BUILD
     
     steps:
-       - name: Run the tests
-         run: npm test
+       - name: Run the tests and generate coverage
+         run: npm test -- --coverage
          
   DEPLOYMENT:
     runs-on: ubuntu-latest
