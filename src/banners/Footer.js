@@ -5,8 +5,8 @@ const Footer = () => {
         'fontSize': '12px'
     }
     return(
-        <div style={footerStyle}>
-            &copy;<label>2020 - 2021 BMI</label>
+        <div style={footerStyle} id="footerDiv">
+            <label aria-labelledby="footerDiv">&copy;2020 - 2021 BMI</label>
         </div>
     )
 }

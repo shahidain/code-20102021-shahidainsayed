@@ -8,8 +8,8 @@ const Header = () => {
         'textAlign': 'center'
     }
     return(
-        <div style={headerStyle}>
-            <label>BMI Calculator</label>
+        <div style={headerStyle} id="headerDiv">
+            <label aria-labelledby="headerDiv">BMI Calculator</label>
         </div>
     )
 }
