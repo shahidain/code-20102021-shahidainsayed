@@ -1,5 +1,5 @@
 import sampleData from "./data/SampleData";
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 
 
 const BMIValue = (height, weight) => {
@@ -45,10 +45,10 @@ class BmiApp extends Component {
         this.addNewEntry = this.addNewEntry.bind(this);
     }
     setValueHandler(event){
-        if(event.target.name=='weight'){
+        if(event.target.name==='weight'){
            this.setState({...this.state, weight: event.target.value});
         }
-        if(event.target.name=='height'){
+        if(event.target.name==='height'){
             this.setState({...this.state, height: event.target.value});
         }
     }
