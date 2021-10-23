@@ -16,7 +16,7 @@ const BMIData = (height, weight) => {
         case (BMI > 18.4 && BMI <= 24.9):
             return {'BMI': BMI, 'Category' : 'Normal weight', 'HealthRisk' : 'Low risk'};
         case (BMI > 24.9 && BMI <= 29.9):
-            return {'BMI': BMI, 'Cateory' : 'Overweight', 'HealthRisk' : 'Enhanced risk'};
+            return {'BMI': BMI, 'Category' : 'Overweight', 'HealthRisk' : 'Enhanced risk'};
         case (BMI > 24.9 && BMI <= 34.9):
             return {'BMI': BMI, 'Category' : 'Moderately obese', 'HealthRisk' : 'Medium risk'};
         case (BMI > 35 && BMI <= 39.9):
