@@ -25,4 +25,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Application get deployed from main branch and can be accessed using below URL
 
-[https://pewt.in/react-app] (https://pewt.in/react-app)
+https://pewt.in/react-app
