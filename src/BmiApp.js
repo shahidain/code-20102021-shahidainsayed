@@ -96,8 +96,8 @@ class BmiApp extends Component {
                     </div>
                     <div>
                         <span className="title">Gender:</span>
-                        <label htmlFor="genderMale">Male</label><input type="radio" name="gender" id="genderMale" defaultChecked={this.state.gender=== 'Male'}  value="Male" onChange={this.setGenderHandler}/>
-                        <label htmlFor="genderFemale" className="gender">Female</label><input type="radio" name="gender" id="genderFemale" defaultChecked={this.state.gender=== 'Female'} value="Female" onChange={this.setGenderHandler}/>
+                        <label htmlFor="genderMale">Male</label><input type="radio" name="gender" id="genderMale" checked={this.state.gender=== 'Male'}  value="Male" onChange={this.setGenderHandler}/>
+                        <label htmlFor="genderFemale" className="gender">Female</label><input type="radio" name="gender" id="genderFemale" checked={this.state.gender==='Female'} value="Female" onChange={this.setGenderHandler}/>
                     </div>
                     <div style={{marginTop:'5px'}}>
                         <span className="title">Weight (Kg):</span>
