@@ -57,6 +57,25 @@ jobs:
     
     steps:
       
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+  
+      - name: Setup Node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v1
+        with:
+           node-version: ${{matrix.node-version}}
+
+      - name: Install Dependencies
+        run: npm install
+        
+      - name: Create Release Artifacts
+        run: npm run build
+        
       - name: Deploy Application
-        run: |
-         echo Your deployment script goes here
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+         server: 69.73.183.21
+         username: khateeb
+         password: ${{ secrets.FTP_PWD }}
+         local-dir: build/
+         server-dir: public_html/react-app/

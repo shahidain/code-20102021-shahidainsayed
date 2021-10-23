@@ -9,6 +9,7 @@ const BMIValue = (height, weight) => {
 
 const BMIData = (height, weight) => {
     let BMI = BMIValue(height, weight);
+    
     switch (true){
         case (BMI <= 18.4):
             return {'BMI': BMI, 'Category' : 'Underweight', 'HealthRisk' : 'Malnutrition risk'};
@@ -23,7 +24,7 @@ const BMIData = (height, weight) => {
         case (BMI >= 40):
             return {'BMI': BMI, 'Category' : 'Very severely obese', 'HealthRisk' : 'Very high risk'};
         default :
-            return {'BMI': BMI, 'Category' : '', 'HealthRisk' : ''};;
+            return {'BMI': BMI, 'Category' : '', 'HealthRisk' : ''};
     }
 }
 
