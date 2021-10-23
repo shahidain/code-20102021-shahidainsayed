@@ -27,3 +27,13 @@ table.bordered th, td{
 table.bordered td.right{
   text-align: right;
 }
+
+span.title{
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+label.gender{margin-left: 10px;}
+input[type=text]{width:100px;height:20px}
+button {background-color:rgb(8, 80, 214);color:#fff; height: 25px; border:solid 1px rgb(7, 69, 241); width: 100px; font-weight: bold;font-variant: small-caps;}
