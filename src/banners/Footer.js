@@ -10,7 +10,7 @@ const Footer = () => {
                 <label aria-labelledby="footerDiv">&copy;2020 - 2021 BMI</label>
             </div>
             <div style={{textAlign:'center',marginTop:'5px',fontSize:'12px'}}>
-                Version: 1.0.5.2310212339
+                Version: 1.0.6.1911212339
             </div>
         </>
     )

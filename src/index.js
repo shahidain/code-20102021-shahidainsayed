@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import BmiApp from './BmiApp'
+import BmiApp from './BmiApp';
+import BmiAppFunction from './BmiAppFunctional';
 import {Header, Footer} from './banners'
 
 ReactDOM.render(
   <React.StrictMode>
     <Header/>
-    <BmiApp />
+    <BmiAppFunction />
     <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
