@@ -33,7 +33,7 @@ const BmiAppFunction = () => {
     BMIData: BMIData(data.HeightCm, data.WeightKg)
   }));
 
-  const [data, setData] = useState({ sampleData: sampleDataWithBMIInfo, age: '', gender: 'Male', height: 0, weight: 0 });
+  const [data, setData] = useState({ sampleData: sampleDataWithBMIInfo, gender: 'Male', height: 0, weight: 0 });
 
   const setGenderHandler = (gender: string) => {
     setData(previousData => ({
@@ -63,7 +63,7 @@ const BmiAppFunction = () => {
         BMIData: BMIData(data.height, data.weight)
       });
       setData(previousData => ({
-        ...previousData, sampleData: newBMIData, weight: 0, height: 0
+        ...previousData, sampleData: newBMIData, weight: 0, height: 0, gender: 'Male'
       }));
     }
   };
@@ -108,11 +108,11 @@ const BmiAppFunction = () => {
         </div>
         <div style={{ marginTop: '5px' }}>
           <span className="title">Weight (Kg):</span>
-          <input type="text" name="weight" onChange={event => setWeight(event)} value={data.weight == 0 ? '' : data.weight} autoComplete="off" />
+          <input type="text" name="weight" onChange={event => setWeight(event)} value={data.weight === 0 ? '' : data.weight} autoComplete="off" />
         </div>
         <div style={{ marginTop: '5px' }}>
           <span className="title">Height (cm):</span>
-          <input type="text" name="height" onChange={event => setHeight(event)} value={data.height == 0 ? '' : data.height} autoComplete="off" />
+          <input type="text" name="height" onChange={event => setHeight(event)} value={data.height === 0 ? '' : data.height} autoComplete="off" />
         </div>
         <div style={{ marginTop: '5px' }}><button onClick={addNewEntry}>Add Entry</button></div>
       </div>
