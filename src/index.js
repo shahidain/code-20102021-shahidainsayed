@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import BmiApp from './BmiApp';
 import BmiAppFunction from './BmiAppFunctional';
 import {Header, Footer} from './banners'
 
