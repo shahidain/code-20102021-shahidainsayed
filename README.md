@@ -1,6 +1,6 @@
 [![CI](https://github.com/shahidain/code-20102021-shahidainsayed/actions/workflows/main.yml/badge.svg)](https://github.com/shahidain/code-20102021-shahidainsayed/actions/workflows/main.yml)
 
-# Getting Started with Create React App
+# BMI React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
